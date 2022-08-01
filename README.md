@@ -1,6 +1,4 @@
-# Neural_Network_Charity_Analysis
-
-## **<h1 align="justify"> Credit_Risk_Analysis**
+## **<h1 align="justify"> Neural_Network_Charity_Analysis**
   	
 ---
 ## Overview of the project: 
