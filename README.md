@@ -20,15 +20,23 @@
 
 ## Data Preprocessing:
 	
-<p align="justify">This project consists of four technical analysis deliverables. <p>	
+<p align="justify">
 
-- Calculation of the confusion matrix.
+- As part of the data preprocessing, at first the non-beneficial ID columns 'EIN' and 'NAME' have been dropped.
+- Since “IS_SUCCESSFUL” column contains binary data which is our decision column, has been considered as a target variable for neural network.
+- Remaining columns are considered as categorical variable. The OneHotEncoder has been used to perform fit and transform the categorical variables. After that encoded categorical variables have been split into training and testing datasets.
+	
+<p>	
+
 	
 ## Compiling, Training, and Evaluating the Model:
 	
-<p align="justify">This project consists of four technical analysis deliverables. <p>	
 
-- Calculation of the confusion matrix.
+- Two hidden layers have been made for our model are 80 and 30. And the output layer has been made of single neuron.
+- In order to increase the speed of training process, an activation function for input layers “relu” has ben used and “sigmoid” for output layer.
+- To compile the model, “adam” as the optimizer and “binary_crossentropy” as the loss function has been used. 
+- The average model accuracy is 73% which was not satisfactory to get the outcome. To boost up the performance, several initiatives have been taken, like increase the number of neurons, increase the number of layers, different activation function. The ultimate result is, we got the same performance as like before. 
+	
 	
 ## Summary:
-- The balanced accuracy score is 93%. The high_risk precision is about 7% only with 91% sensitivity which makes a F1 of 14% only. Low_risk precision is almost 100% with a sensitivity of 94%.
+- Since we achieved 73% accuracy on an average, whereas we need at least 75% accuracy, that deep learning neural network model is not appropriate for better performance. It would better try with  supervised machine learning model like Random Forest Classifier.
